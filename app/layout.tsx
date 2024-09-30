@@ -88,8 +88,10 @@ export default function RootLayout({
               "birthDate":"2003-08-22",
               "sameAs": [
                 "https://www.linkedin.com/in/ravikant-chauhan-787abc/",
-                "https://github.com/ravikantchauhan246"
+                "https://github.com/ravikantchauhan246",
+                "https://dev.to/ravikantchauhan",
               ],
+              "image": "https://www.ravikant.dev/images/profile.jpg",
               "description": "Ravikant Chauhan is a passionate web developer specializing in building user-friendly web applications.",
             }
           `}

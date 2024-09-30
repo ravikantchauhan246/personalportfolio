@@ -73,6 +73,27 @@ export default function RootLayout({
 
         {/* <!-- Viewport Settings for Mobile Optimization --> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Ravikant Chauhan",
+              "url": "https://www.ravikant.dev",
+              "jobTitle": "Web Developer",
+              "alumniOf": "Savitribai Phule Pune University",
+              "email": "ravikantchauhan246@gmail.com",
+              "mobile": "+917276605768",
+              "birthDate":"2003-08-22",
+              "sameAs": [
+                "https://www.linkedin.com/in/ravikant-chauhan-787abc/",
+                "https://github.com/ravikantchauhan246"
+              ],
+              "description": "Ravikant Chauhan is a passionate web developer specializing in building user-friendly web applications.",
+            }
+          `}
+        </script>
       </head>
 
       <body

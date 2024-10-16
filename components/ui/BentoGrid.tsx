@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+// import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -25,10 +26,10 @@ export const BentoGridItem = ({
   title,
   description,
   id,
-  img,
-  imgClassName,
-  titleClassName,
-  spareImg,
+  // img,
+  // imgClassName,
+  // titleClassName,
+  // spareImg,
  
 }: {
   className?: string;
@@ -53,9 +54,7 @@ export const BentoGridItem = ({
     >
       <div className={`${id === 6} && 'flex justify-center h-full'`}>
         <div className="w-full h-full">
-         {img && (
-          <img src={img} alt={title} className={cn(imgClassName,'object-cover,object-center')}/>
-         )}
+         
         </div>
       </div>
       

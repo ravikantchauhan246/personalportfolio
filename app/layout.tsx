@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { Analytics } from "@vercel/analytics/react";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,7 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
+      
       <head>
         {/* <!-- Favicon --> */}
         <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon" />
@@ -100,20 +103,29 @@ export default function RootLayout({
           }}
         ></script>
       </head>
+     
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
+
         >
+          
           {children}
+          
           <Analytics/>
         </ThemeProvider>
+        
+        
       </body>
+     
     </html>
+    
   );
 }

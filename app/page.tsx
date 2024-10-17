@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import styles from './UnderConstruction.module.css';
+import styles from "./UnderConstruction.module.css";
+import DataCollectingForm from "@/components/DataCollectingForm";
 
 const UnderConstruction = () => {
   return (
@@ -16,17 +17,20 @@ const UnderConstruction = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4 min-h-screen"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 min-h-screen h-screen pt-48"
       >
-        <div className={`${styles.scaleIn} ${styles.btnShine} text-4xl md:text-7xl font-bold text-white text-center`}>
+        <div
+          className={`${styles.scaleIn} text-4xl md:text-7xl font-bold text-white text-center`}
+        >
           Ravikant Chauhan
         </div>
         <div className="font-extralight text-base md:text-2xl text-neutral-200 py-4 text-center">
           Full Stack Developer | Cloud Enthusiast | Crafting Digital Experiences
         </div>
         <div className="text-sm md:text-base text-neutral-300 max-w-2xl text-center">
-          Welcome to my portfolio! I'm currently enhancing this space to showcase my projects and skills. 
-          Stay tuned for an immersive journey through my work in web development and AI.
+          Welcome to my portfolio! I'm currently enhancing this space to
+          showcase my projects and skills. Stay tuned for an immersive journey
+          through my work in web development and AI.
         </div>
         <section className="flex justify-center items-center mt-4">
           <a
@@ -54,6 +58,7 @@ const UnderConstruction = () => {
             </span>
           </a>
         </section>
+        <DataCollectingForm />
       </motion.div>
     </AuroraBackground>
   );

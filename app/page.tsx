@@ -10,14 +10,14 @@ const UnderConstruction = () => {
   return (
     <AuroraBackground>
       <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0.0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4 min-h-screen h-screen pt-48"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 min-h-screen h-screen pt-16"
       >
         <div
           className={`${styles.scaleIn} text-4xl md:text-7xl font-bold text-white text-center`}
